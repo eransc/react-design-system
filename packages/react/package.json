@@ -51,7 +51,8 @@
     "test": "jest --env=jsdom --verbose",
     "test:watch": "yarn test --watch",
     "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "test:chromatic": "chromatic --project-token=\"$CHROMATIC_PROJECT_TOKEN\""
   },
   "husky": {
     "pre-commit": "yarn format && git add -A ."
